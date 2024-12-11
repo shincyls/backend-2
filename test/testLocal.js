@@ -1,16 +1,13 @@
 const axios = require('axios');
-require('dotenv').config();
 
 const testLocal = async () => {
-  const API_KEY = process.env.PIXABAY_API_KEY;
   const query = 'spongebob';
-  const url = `http://localhost:3000?key=${API_KEY}&q=${query}`;
-
+  const url = `http://localhost:3000/api/images?q=${query}`;
   try {
     const response = await axios.get(url);
+    // Log the response data
+    console.log('Success:', response.data);
   } catch (error) {
-    console.log(API_KEY);
-    console.log(query);
     console.error('Error:', error.response ? error.response.data : error.message);
   }
 };

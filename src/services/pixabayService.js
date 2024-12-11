@@ -1,8 +1,9 @@
 const axios = require('axios');
 
-const pixabayService = async (searchTerm) => {
+const pixabayService = async (queryKey) => {
+
   const response = await axios.get('https://pixabay.com/api/', {
-    params: { q: searchTerm, key: process.env.PIXABAY_API_KEY },
+    params: { q: queryKey, key: process.env.PIXABAY_API_KEY },
   });
 
   return response.data.hits.map(image => ({
@@ -13,6 +14,7 @@ const pixabayService = async (searchTerm) => {
     source: 'Pixabay',
     tags: image.tags.split(', '),
   }));
+
 };
 
 module.exports = pixabayService;
