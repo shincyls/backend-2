@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # backend-2 (Images API)
 test assgisnment
 =======
@@ -8,9 +8,13 @@ In the project directory, you need to create a your own .env file
 
 example:
 PORT=3000
+
 UNSPLASH_ACCESS_KEY=YOUR_UNSPLASH_KEY 
+
 PIXABAY_API_KEY=YOUR_PIXABAY_KEY 
+
 STORYBLOCKS_API_KEY=YOUR_STORYBLOCKS_KEY 
+
 
 ### `npm install`
 ### `npx nodemon server.js`
