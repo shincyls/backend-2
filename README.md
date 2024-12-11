@@ -12,8 +12,8 @@ UNSPLASH_ACCESS_KEY=YOUR_UNSPLASH_KEY
 PIXABAY_API_KEY=YOUR_PIXABAY_KEY
 STORYBLOCKS_API_KEY=YOUR_STORYBLOCKS_KEY
 
-
-### `npx nodemon server.js `
+### `npm install`
+### `npx nodemon server.js`
 Open the folder in terminal and run the command above
 
 ### Internet Browser, browse "http://localhost:3000/api/images?query={queryKeyword}"
