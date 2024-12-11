@@ -7,6 +7,7 @@ test assgisnment
 In the project directory, you need to create a your own .env file
 
 example:
+
 PORT=3000
 
 UNSPLASH_ACCESS_KEY=YOUR_UNSPLASH_KEY 
