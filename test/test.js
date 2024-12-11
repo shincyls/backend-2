@@ -1,8 +1,10 @@
 const axios = require('axios');
 
+require('dotenv').config();
+
 const testPixabay = async () => {
-  const API_KEY = process.env.PIXABAY_API_KEY; // Replace with your key
-  const query = 'cat'; // Replace with your search term
+  const API_KEY = process.env.PIXABAY_API_KEY;
+  const query = 'spongebob';
   const url = `https://pixabay.com/api/?key=${API_KEY}&q=${query}`;
 
   try {

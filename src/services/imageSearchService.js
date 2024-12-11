@@ -1,12 +1,12 @@
-const unsplashService = require('./unsplashService');
+// const unsplashService = require('./unsplashService');
 const pixabayService = require('./pixabayService');
-const storyblocksService = require('./storyblocksService');
+// const storyblocksService = require('./storyblocksService');
 
 const fetchImages = async (searchTerm) => {
   const results = await Promise.allSettled([
-    unsplashService(searchTerm),
+    // unsplashService(searchTerm),
     pixabayService(searchTerm),
-    storyblocksService(searchTerm),
+    // storyblocksService(searchTerm),
   ]);
 
   return results
